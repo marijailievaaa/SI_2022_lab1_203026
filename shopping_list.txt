@@ -1,6 +1,11 @@
 Tetratka x4
 Penkalo x6
 Moliv x1
+<<<<<<< HEAD
 Guma x1
 Ostrilka x4
 
+=======
+Sestar x1
+Ranec
+>>>>>>> branch2
