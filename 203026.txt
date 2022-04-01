@@ -1,0 +1,510 @@
+Марија Илиева 203026
+Lab1
+
+1. Мојот профил на GIT e https://github.com/marijailievaaa 
+
+2. Името на мојата главна гранка го променив од main во master, во settings. 
+
+3. Креирав мој репозиториум со дадениот формат SI_2022_lab1_203026 и го поставив профилот да биде приватен и ја одбрав опцијата Add a README file. 
+
+4. Клонирањето го направив со командата: 
+
+	$ git clone https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+5. Додадов текстуална дадодетка shopping_list.txt во локалниот репозиториум со случајни 5 прозиводи и направив commit со командата: 
+
+	$nano shopping_list.txt 
+
+	$git add shopping_list.txt 
+
+	$git commit  -m “Add 5 items to the shopping list” 
+
+6. На секој од прозиводите им додадов произволна количина и направив commit: 
+
+	$git commit –a –m “Add quantitites to the items” 
+
+7. Kреирав две гранки со командите: 
+
+	$ git checkout -b branch1 
+
+	$ git checkout -b branch2 
+
+8.Кодот кој го пишував до сега е: 
+
+38975@LAPTOP-9HTQ6330 MINGW64 ~ 
+
+$ git --version 
+
+git version 2.35.1.windows.2 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 ~ 
+
+$ git config --global user.name "marijailievaaa" 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 ~ 
+
+$ git config --global user.email "marija.ilieva@students.finki.ukim.mk"  
+
+38975@LAPTOP-9HTQ6330 MINGW64 ~ 
+
+$ cd /C 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C 
+
+$ mkdir Git 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C 
+
+$ ls 
+
+'$Recycle.Bin'/            'Program Files (x86)'/ 
+
+'$WinREAgent'/              ProgramData/ 
+
+ASUS/                      Recovery/ 
+
+DRIVERS/                  'System Volume Information'/ 
+
+'Documents and Settings'@   Users/ 
+
+DumpStack.log.tmp          Windows/ 
+
+Finish.log                'Wondershare UniConverter 13'/ 
+
+Git/                       devlist.txt 
+
+Microsoft/                 hiberfil.sys 
+
+OneDriveTemp/              pagefile.sys 
+
+PerfLogs/                  swapfile.sys 
+
+'Program Files'/ 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C 
+
+$ cd Git 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git 
+
+$ git clone https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+Cloning into 'SI_2022_lab1_203026'... 
+
+remote: Enumerating objects: 3, done. 
+
+remote: Counting objects: 100% (3/3), done. 
+
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 
+
+Receiving objects: 100% (3/3), done. 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git 
+
+$ cd SI_2022_lab1_203026 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ nano shopping_list.txt 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git add shopping_list.txt 
+
+warning: LF will be replaced by CRLF in shopping_list.txt. 
+
+The file will have its original line endings in your working directory 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git commit -m "Add 5 items to the shopping list" 
+
+[master 445e84c] Add 5 items to the shopping list 
+
+1 file changed, 6 insertions(+) 
+
+create mode 100644 shopping_list.txt 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git commit -a -m "Add quantities to the items" 
+
+On branch master 
+
+Your branch is ahead of 'origin/master' by 1 commit. 
+
+  (use "git push" to publish your local commits) 
+
+  
+
+nothing to commit, working tree clean 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git status 
+
+On branch master 
+
+Your branch is ahead of 'origin/master' by 1 commit. 
+
+  (use "git push" to publish your local commits) 
+
+  
+
+nothing to commit, working tree clean 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git commit -a -m "Add quantities to the items" 
+
+On branch master 
+
+Your branch is ahead of 'origin/master' by 1 commit. 
+
+  (use "git push" to publish your local commits) 
+
+  
+
+nothing to commit, working tree clean 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git status 
+
+On branch master 
+
+Your branch is ahead of 'origin/master' by 1 commit. 
+
+  (use "git push" to publish your local commits) 
+
+  
+
+Changes not staged for commit: 
+
+  (use "git add <file>..." to update what will be committed) 
+
+  (use "git restore <file>..." to discard changes in working directory) 
+
+        modified:   shopping_list.txt 
+
+  
+
+no changes added to commit (use "git add" and/or "git commit -a") 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git commit -a -m "Add quantities to the items" 
+
+warning: LF will be replaced by CRLF in shopping_list.txt. 
+
+The file will have its original line endings in your working directory 
+
+[master cf0a463] Add quantities to the items 
+
+1 file changed, 5 insertions(+), 5 deletions(-) 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git checkout -b branch1 
+
+Switched to a new branch 'branch1' 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch1) 
+
+$ git checkout -b branch2 
+
+Switched to a new branch 'branch2' 
+
+9. Сите гранки ги синхронизирав со: 
+
+	$ git push origin master 
+
+	$ git push origin branch1 
+
+	$ git push origin branch2 
+
+10. На гранката branch1 се префрлив со командата: 
+
+	$ git checkout branch1 
+
+11. Прво ја сменив количината на 5тата ставка во shopping_list и потоа направив commit со командата: 
+
+	$ git commit -a -m "Change quantity of item #5" 
+
+12.  Со следната команда се вратив на гранката master: 
+
+	$ git checkout master 
+
+13. Ja сменив количината на 2тата ставка во shopping_list и потоа направив commit со командата: 
+
+	$ git commit -a -m "Change quantity of item #2" 
+
+14. Сите гранки ги синхорнизирав со оддалечениот репозиториум со командата: 
+
+	$git origin master 
+
+	$git origin branch1 
+
+	$git origin branch2 
+
+15. На гранката branch2 се префрлив со командата: 
+
+	$ git checkout branch2 
+
+16. Прво го сменив името на 2та ставка во shopping_list и потоа направив commit со командата: 
+
+	$ git commit -a -m "Modify item #4" 
+
+17. Кодот кој го пишував до сега е: 
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch2) 
+
+$ git push origin master 
+
+Enumerating objects: 7, done. 
+
+Counting objects: 100% (7/7), done. 
+
+Delta compression using up to 4 threads 
+
+Compressing objects: 100% (5/5), done. 
+
+Writing objects: 100% (6/6), 670 bytes | 223.00 KiB/s, done. 
+
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 
+
+To https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+   2281391..cf0a463  master -> master 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch2) 
+
+$ git push origin branch1 
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 
+
+remote: 
+
+remote: Create a pull request for 'branch1' on GitHub by visiting: 
+
+remote:      https://github.com/marijailievaaa/SI_2022_lab1_203026/pull/new/branch1 
+
+remote: 
+
+To https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+* [new branch]      branch1 -> branch1 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch2) 
+
+$ git push origin branch2 
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 
+
+remote: 
+
+remote: Create a pull request for 'branch2' on GitHub by visiting: 
+
+remote:      https://github.com/marijailievaaa/SI_2022_lab1_203026/pull/new/branch2 
+
+remote: 
+
+To https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+* [new branch]      branch2 -> branch2 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch2) 
+
+$ git checkout branch1 
+
+Switched to branch 'branch1' 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch1) 
+
+$ git commit -a -m "Change quantity of item #5" 
+
+warning: LF will be replaced by CRLF in shopping_list.txt. 
+
+The file will have its original line endings in your working directory 
+
+[branch1 04fc271] Change quantity of item #5 
+
+1 file changed, 1 insertion(+), 1 deletion(-) 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch1) 
+
+$ git checkout master 
+
+Switched to branch 'master' 
+
+Your branch is up to date with 'origin/master'. 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git commit -a -m "Change quantity of item #2" 
+
+[master 089454e] Change quantity of item #2 
+
+1 file changed, 1 insertion(+), 1 deletion(-) 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git origin master 
+
+git: 'origin' is not a git command. See 'git --help'. 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git push origin master 
+
+  
+
+Enumerating objects: 5, done. 
+
+Counting objects: 100% (5/5), done. 
+
+Delta compression using up to 4 threads 
+
+Compressing objects: 100% (3/3), done. 
+
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done. 
+
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 
+
+To https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+   cf0a463..089454e  master -> master 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git push origin branch1 
+
+Enumerating objects: 5, done. 
+
+Counting objects: 100% (5/5), done. 
+
+Delta compression using up to 4 threads 
+
+Compressing objects: 100% (3/3), done. 
+
+Writing objects: 100% (3/3), 356 bytes | 178.00 KiB/s, done. 
+
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 
+
+To https://github.com/marijailievaaa/SI_2022_lab1_203026.git 
+
+   cf0a463..04fc271  branch1 -> branch1 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git push origin branch2 
+
+Everything up-to-date 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (master) 
+
+$ git checkout branch2 
+
+Switched to branch 'branch2' 
+
+  
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch2) 
+
+$ git commit -a -m "Modify item #4" 
+
+[branch2 7d5e24a] Modify item #4 
+
+1 file changed, 1 insertion(+), 1 deletion(-) 
+
+18. Прво додадов 6та ставкаво shopping_list и потоа направив commit со командата: 
+
+	$ git commit --amend -a -m "Modify item #4 and add item #6" 
+
+19. Кодот кој го пишував до сега е: 
+
+38975@LAPTOP-9HTQ6330 MINGW64 /C/Git/SI_2022_lab1_203026 (branch2) 
+
+$ git commit --amend -a -m "Modify item #4 and add item #6" 
+
+[branch2 0bc4525] Modify item #4 and add item #6 
+
+Date: Fri Apr 1 14:26:32 2022 +0200 
+
+1 file changed, 2 insertions(+), 2 deletions(-) 
+
+20. Прво се префрлив на гранката master и потоа ја споив со branch1 со командата: 
+
+	$git chackout master 
+
+	$git commit –a –m “Marge branch1” 
+
+	$git merge branch1 
+
+21. При спојување на branch2 кон master настана конфликт и прво избришав еден од производите и потоа ги споив со командата: 
+
+	$git commit –a –m “Marge branch2” 
+
+	$git merge branch2 
+
+22. Го додавам мојот документ со командите : 
+
+	$git add 203026.txt 
+
+	$git commit –m “Add docs” 
