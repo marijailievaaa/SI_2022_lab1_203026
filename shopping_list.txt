@@ -2,5 +2,5 @@ Tetratka x4
 Penkalo x6
 Moliv x1
 Guma x1
-Ostrilka x1
+Ostrilka x4
 
